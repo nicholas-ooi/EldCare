@@ -1,0 +1,62 @@
+
+<template name="home">
+
+  <div class="segmented-control">
+    <a class="control-item active">Maid</a>
+    <a class="control-item">Elderly</a>
+    <a class="control-item">Illness</a>
+    <a class="control-item">Homecare</a>
+    <a class="control-item">Medication</a>
+  </div>
+  <ul class="table-view">
+    <li class="table-view-cell table-view-divider ads">Advertisement</li>
+    <li class="table-view-cell media">
+      <a class="navigate-right" data-ignore="push">
+        <img class="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Argo's poster">
+        <div class="media-body">
+          <span class="agency_title">
+            Caregiver Service + Tracker + FREE Delivery!!!
+          </span>
+          <p class="agency_detail">
+            Buy my advertised product here!! Get it fast and cheap today! Bundle it with our caregiving service!
+          </p>
+        </div>
+      </a>
+    </li>
+    <li class="table-view-cell table-view-divider">Recommended Caregiver Agencies</li>
+    {{#each agencies}}
+    <li class="table-view-cell media">
+      <a class="navigate-right" href="/detail/{{id}}" data-ignore="push">
+        <img class="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Argo's poster">
+        <div class="media-body">
+          <span class="agency_title">
+            {{title}}
+          </span>
+          <p class="agency_detail">
+            {{detail}}
+          </p>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+    <li class="table-view-cell table-view-divider">Recommended Products</li>
+    {{#each products}}
+    <li class="table-view-cell media">
+      <a class="navigate-right" href="/detail/{{id}}" data-ignore="push">
+        <img class="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Argo's poster">
+        <div class="media-body">
+          <span class="agency_title">
+            {{title}}
+          </span>
+          <p class="agency_detail">
+            {{detail}}
+          </p>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+
+
+
+</template>

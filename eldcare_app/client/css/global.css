@@ -1,0 +1,61 @@
+.bar
+{
+  background: #639663 !important;
+  border-bottom: #fff !important;
+}
+
+.bar .title
+{
+  color:#fff !important;
+  font-weight: bold;
+}
+
+.tab-label
+{
+  color:#fff;
+  font-weight: bold;
+}
+
+
+.icon
+{
+  color:#eee !important;
+}
+
+
+.table-view-divider
+{
+  font-weight: bold !important;
+}
+
+
+.agency_title
+{
+  font-size: 13px;
+}
+.agency_detail
+{
+  font-size: 12px;
+}
+
+.searchArea
+{
+  border:none !important;
+  box-shadow: none !important;
+}
+
+.ads
+{
+  font-size: 12px;
+  background: #fdffdd !important;
+}
+
+.detailForm
+{
+  font-size: 13px !important;
+}
+
+.detailForm input
+{
+  font-size: 13px !important;
+}
